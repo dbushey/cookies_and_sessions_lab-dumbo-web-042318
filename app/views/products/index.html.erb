@@ -1,0 +1,16 @@
+<h1>I am here</h1>
+
+<%= form_tag '/' do %>
+<%= label_tag 'product','Type Product: ' %>
+<%= text_field_tag 'product' %><br>
+<%= submit_tag "add to cart" %>
+<% end %>
+
+
+<ul>
+  <% cart.each do |c| %>
+  <li>
+    <%= c %>
+  </li>
+  <% end %>
+</ul>
